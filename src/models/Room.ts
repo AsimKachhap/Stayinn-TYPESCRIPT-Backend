@@ -12,9 +12,18 @@ const RoomSchema = new mongoose.Schema({
     default: 1,
     require: true,
   },
+  capacity: {
+    type: Number,
+    default: 1,
+    require: true,
+  },
   rate: {
     type: Number,
     require: true,
+  },
+  isOccupied: {
+    type: Boolean,
+    default: false,
   },
 });
 
