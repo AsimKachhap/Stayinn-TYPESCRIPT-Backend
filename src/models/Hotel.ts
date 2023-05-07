@@ -33,8 +33,15 @@ const HotelSchema = new mongoose.Schema(
     pictures: {
       type: [String],
     },
+
+    rooms: {
+      type: [mongoose.Schema.Types.ObjectId],
+      ref: "Room ",
+    },
   },
   {
     timestamps: true,
   }
 );
+
+module.exports = mongoose.model("Hotel", HotelSchema);
