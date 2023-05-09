@@ -36,7 +36,7 @@ const HotelSchema = new mongoose.Schema(
 
     rooms: {
       type: [mongoose.Schema.Types.ObjectId],
-      ref: "Room ",
+      ref: "Room",
     },
   },
   {
@@ -44,4 +44,4 @@ const HotelSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model("Hotel", HotelSchema);
+export default mongoose.model("Hotel", HotelSchema);
