@@ -1,0 +1,11 @@
+version: 2
+
+builders:
+  frontend:
+    setup:
+      commands:
+        - npm ci
+    command: npx tsc
+
+runtimes:
+  web: node dist/index.js
