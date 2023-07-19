@@ -7,7 +7,7 @@ const HotelSchema = new mongoose.Schema(
       require: [true, "Please Enter Hotel Name"],
       unique: true,
     },
-    addresss: {
+    address: {
       type: String,
       require: [true, "Please enter Address"],
       unique: true,
